@@ -13,7 +13,7 @@ public class Taula {
         }
 
         for(int i = 0; i < numFilosofs; i++){
-            filosofs[i] = new Filosof("Filosof " + i);
+            filosofs[i] = new Filosof("fil " + i);
 
             Forquilla esquerra = forquilles[i];
             Forquilla dreta = forquilles[(i + 1) % numFilosofs];
@@ -30,12 +30,12 @@ public class Taula {
 
     public void showTaula(){
         for(Filosof f: filosofs){
-            System.out.println(f.getName() + " sentado en la mesa");
+            System.out.println("Comensal: " + f.getName() + " esq: " + f.getEsquerra().getNumero() + " dret: " + f.getDreta().getNumero());
         }
     }
 
     public static void main(String[] args) {
-        Taula taula = new Taula(5);
+        Taula taula = new Taula(4);
         
         taula.showTaula();
         taula.cridarATaula();

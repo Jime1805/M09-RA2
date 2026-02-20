@@ -8,16 +8,16 @@ public class Forquilla{
         this.enUs = false;
     }
 
-    public synchronized void agafar() throws InterruptedException{
-        while (enUs) {
-            wait();
+    public synchronized boolean agafar(){
+        if (!enUs) {
+            enUs = true;
+            return true;
         }
-        enUs = true;
+        return false;
     }
 
     public synchronized void deixar(){
         enUs = false;
-        notify();
     }
 
     public int getNumero() {
