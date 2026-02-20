@@ -32,7 +32,6 @@ public class Filosof extends Thread {
     }
 
     private void menjar(){
-        System.out.println(getName() + " está comiendo");
         System.out.println("Filòsof: " + getName() + " menja");
         pausaRandom(1000, 2000);
         System.out.println("Filòsof: " + getName()+ " ha acabat de menjar");
@@ -55,7 +54,7 @@ public class Filosof extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            
+
             boolean haMenjat = false;
 
             while (!haMenjat) {
@@ -73,7 +72,7 @@ public class Filosof extends Thread {
                         System.out.println("Filòsof: " + getName() + " deixa l'esquerra (" + esquerra.getNumero() + ") i espera (dreta ocupada)");
                         esquerra.deixar();
                         gana++;
-                        System.out.println("Filòsof: " + getName() + "gana=" + gana);
+                        System.out.println("Filòsof: " + getName() + " gana=" + gana);
                         pausaRandom(500, 1000);
                     }
 

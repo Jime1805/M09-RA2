@@ -38,6 +38,7 @@ public class Taula {
         Taula taula = new Taula(4);
         
         taula.showTaula();
+        System.out.println("---------------------------");
         taula.cridarATaula();
     }
 }
