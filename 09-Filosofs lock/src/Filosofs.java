@@ -63,6 +63,7 @@ public class Filosofs extends Thread{
     public void resetGana(){
         iniciGana = System.currentTimeMillis();
         fiGana = 0;
+        gana = 0;
     }
 
     public void menjar(){

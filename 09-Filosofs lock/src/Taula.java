@@ -14,7 +14,7 @@ public class Taula {
             Forquilla esquerra = forquilles[j];
             Forquilla dreta = forquilles[(1 + j)%numFilosofs];
 
-            filosofs[j] = new Filosofs("Fil " + j, esquerra, dreta);
+            filosofs[j] = new Filosofs("Fil" + j, esquerra, dreta);
         }
     }
 
@@ -24,8 +24,8 @@ public class Taula {
             int dreta = (i + 1)%filosofs.length;
 
             System.out.println("Comensal: Fil" + i
-                            + "esq: " + esquerre
-                            + "dreta: " + dreta);
+                            + " esq: " + esquerre
+                            + " dreta: " + dreta);
         }
     }
 
